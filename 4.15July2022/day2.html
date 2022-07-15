@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        div{
+            background-color: pink;
+            height:50px;
+            border-radius:100px ;
+            width:500px ;
+            margin:20px;
+            padding:4px;
+            
+        }
+        
+        nav a{
+            color:rgb(197,13,13);
+            text-decoration: none;
+            border:3px solid rgba(112, 170, 224, 0.705);
+            font-size:medium;
+            font-weight:bolder;
+            margin:20px;
+            border-radius:10px;
+        
+
+        }
+        nav{
+
+            margin-top: 20px;
+            border-color: brown;
+            border: 3in;
+            background-color:rgb(248, 99, 124);
+
+        }
+        .button {
+            background-color: white;
+            color: black;
+            border: 2px solid #4c77af;
+                }
+
+        .button:hover {
+            background-color: #fa95bb;
+            color: white;
+                        }
+    </style>
+</head>
+<body style="background: radial-gradient(pink,rgb(192, 225, 255));">
+    <div>
+    <nav>
+        <a href="bh.jpeg">Link1</a>
+        <a href="bh.jpeg">Link2</a>
+        <a href="bh.jpeg">Link3</a>
+        <a href="bh.jpeg">Link4</a>
+    </nav>
+
+</div>
+    <label for="file">Downlaoding Progress</label>
+    <progress id="file" value="32" max="100">32%</progress>
+    <br><label for="name">Name</label>
+    <input type="text" name="q" id="name">
+
+    <form action="done.html" method="get">
+        <fieldset>
+            <legend>Apllication Form</legend>
+            <label for="name1" >NAME</label>
+            <input type="text" name="abc" id="name1" placeholder="your name">
+            <br><br>
+            <label for="num">PHONE</label>
+            <input type="number" name="123" id="num" placeholder="your phone no.">
+            <br><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+            <br><br>
+            
+
+            <p>Cources to enroll in:</p>
+            <label for="checkbox">Java</label>
+            <input type="checkbox" id="course" name="cources">
+            <label for="checkbox">C++</label>
+            <input type="checkbox" id="course" name="cources">
+
+            <label for="checkbox">Python</label>
+            <input type="checkbox" id="course" name="cources">
+            <br><br>
+
+            <button class="button">Fking Submit</button>
+
+        </fieldset>
+    
+    </form>
+    
+</body>
+</html>
