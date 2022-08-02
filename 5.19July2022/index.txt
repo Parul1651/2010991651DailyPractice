@@ -1,0 +1,84 @@
+ three ways to include CSS:
+internal : using style tag inside any part of code
+external : making another css file
+inline : jo hum usually karte hai hai har tag mein styling 
+
+
+STYLE TAG :
+
+for internal CSS
+
+phele jahan ki CSS likhni hai uska naam likho , used to overide inline CSS in webpage
+eg: body par css lagani hai then,
+       body{
+			background : url("abc.jpg");
+			background-repeat : no-repeat(bk img won't be repeated)
+							 repeat-y (bk img repeated in y direction)
+							 repeat-x (bk img repeated in x direction)
+
+               }
+
+For INTERNAL CSS of same , it will be  <body style="background-image:url(abc.jpg);background-repeat:no-repeat">  this is INLINE CSS
+used for specific tag in a particular html document
+
+
+Agar ek se zyada pages ke liye same CSS , toh external CSS use kar sakte hai
+
+
+external css file ko html file se link karne ke liye inside head tag write
+<link rel="stylesheet" href="filename.css">
+
+
+2 type sof selector: matlab inhe use karke wahi particular element access hoga
+id(for single element) and class(for group of elements)
+they are defined within a tag u want to access in css or java using that id/class
+id is accessed using (#) while class using (.)
+
+
+ /* .sec-div{
+
+            height: 90px;
+            width: 95%;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 30px;
+            background-color: rgba(11, 90, 249, 0.285);
+        }
+
+
+        
+        .first{
+            height:30px;
+            width:100%;
+            margin-top:30px;
+            background-color: #32292945; display:inline-block; 
+        }*/
+
+
+		/*
+        .stwo{
+            height:70px;
+            width:10%;
+            background-color: rgb(45, 28, 204);
+        }
+
+        .sthree{
+            height:70px;
+            width:10%;
+            background-color: rgb(45, 28, 204);
+        }<div class="sec-div"></div>
+
+     <div class="first">
+        <h3 style="color:white; text-align:center;">Welcome to my page</h3>
+    </div>
+
+        .div{
+            display: inline-block;
+        }*/
+
+
+
+        
+
+
+

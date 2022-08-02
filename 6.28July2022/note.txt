@@ -1,0 +1,49 @@
+
+CSS: 
+
+
+
+ABSOLUTE UNITs:
+px:  Pixel are considred absolute units . every screen/device has diff px. px unit is fixed
+and is not relative to other element. due to this it is difficult to use in responsiveness
+but better to use where maintaing static sizing of elements/when resizing of element is not needed.
+
+px vs vh/vw:
+pz is fixed but vh/vw changes according to the whole screen size of device.hence, they help increse responsiveness.
+They are mostly used fo margins/padding/spacing/w/ht etc while px is mostly used for font sizing ,% etc.
+
+RELATIVE UNITS:
+
+1. EM: relative to parent element . matlab jis element ke anadr woh defined hai
+    1em=16px(1*16)
+    2em=32px(2*16) iska matlab parent size 16 px hai 
+2.REM: realtive to root element. root is html and never body.
+
+
+body{
+    background-color: linear-gradient(to bottom,rgba(255, 179, 0, 0.427), rgba(205, 227, 97, 0.795), rgba(105, 105, 235, 0.526));
+    font-size: 1.15em;
+    text-align: justify;
+    font-family: "Lato",sans-serif;
+
+}
+
+
+#title{
+    color: rgb(186,133,9);
+    font-family: "Sarabun",sans-serif;
+}
+
+
+#service-image{
+    height: 400px;
+
+    width: 70vw;
+
+    background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+    border: 10px solid rgb(186,133,9);
+}
+
+</style>
+</head>
+

@@ -1,0 +1,35 @@
+JavaScript:
+
+JS is a lightweight,interpreted or just in time 
+provides a functinality to a website both server and client side.
+helps provide some behaviour in a dynamic website
+most of it libraries work in front end except for node that is the only librarby that works in backend
+only 3 keywords used:
+let: assisgn a varible
+var: to declare a variable but in this if declared globally and one locally, the one locally will be considered.
+const: declared once and remains same throughout the program (no datatypes or anything)
+
+
+
+can be chlaing in 2 ways:
+1. node: JavaScript ka code chal jata hai ismein
+2.HTML: iske sath JS chalenge toh node ki no need
+
+
+inside HTML doc. JS can be written inside the <script> tag
+
+console.log(); ka matlab hai jo console hai output wahan print ho
+console ka main use debugging ke liye, to create log file and to open server files.
+
+getElementById('id name').innerHTML/Text=var_name : to show the outputfile in HTMl doc on web.
+toh id ko access karke uske inner mein var ko access karenge
+
+innerHTML matlab tag ke andar ki html change hogi
+innerText means tag ke nadra ka text change hoga
+
+JS is highly popular among machine learning comapred to c++ and java because the AI and robot code needs whole source code
+and the machine keeps on learning and making changes in the source code which is made possible by JS.
+
+
+OBJECTS in JS:
+JS is object-based. 
