@@ -6,16 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+<script>
 
+    // function fnclick(){
+    //     // fnclick is user defined name that will be used as onclick id of button created below
+
+    // alert("wassup?"); //create an alert message on clicking a button
+
+    // document.getElementById('p1').innerHTML="Hello!";
+    // //this will work 
+    // }
+
+
+
+    function fnclick(){
+
+
+        var n1 = '5';
+        var n11 = 'A';
+        var n2='6';
+        n1= Number(n1); // here it will get converted to number beacuse value inside var is an actual number
+        n11 = Number(n11); // here since the value of n11 is originally a char , converting it
+                          // to a number is wrong and addition of this with n1 or n2 which are numbers 
+                          //will give NaN
+        n2=Number(n2);
+        document.getElementById('p1').innerHTML=n1+n2;
+    } 
+
+
+
+    // function fnclick(){
+
+
+    //     var n1 = document.getElementById("n1").value;
+    //     var n2 = document.getElementById("n2").value;
+
+
+    //     n1 = Number(n1);
+    //     n2=Number(n2);   
+    //     alert(isNaN(n1+n2)); // checks if their sum is Nan or not if yes,it gives true alert         
+    //     document.getElementById("p1").innerHTML = n1+n2;
+
+
+    // }
+  
+
+
+
+
+//  function fnclick(){
+   
+//     var n1 = document.getElementById("n1").value;
+//     var n2 = document.getElementById("n2").value;
+
+//     if(!isNaN(n1) && !isNaN(n2)){
+//         n1 = Number(n1);
+//         n2=Number(n2);
+//         document.getElementById('p1').innerHTML = n1+n2;
+//     }
+//     else{
+
+//         document.getElementById('p1').innerHTML = "<span style ='color:red'> Please enter a numeric value!</span>";
+//     }
+
+//   }
+
+
+/*
+function fnclick(){
+
+    document.getElementById('p1').innerHTML=Boolean(10>9);  //gives output as true
+}
+*/
+
+
+/*
+//odd even
+function fnclick(){
+
+let n1=document.getElementById('n1').value;
+
+if(n1 %2==0){
+document.getElementById('p1').innerHTML='Even!';
+
+
+}else{
+    document.getElementById('p1').innerHTML='odd!';
+}
+
+
+
+}*/
+
+/*
+
+//checkpruime
+function fnclick(){
+
+
+    let n2=document.getElementById('n1').value;
+
+    var flag=true;
+for(var i=2; i<=n2/2 ; i++){
+
+    if(n2%i==0){
+        flag = false;
+        break;
+    }
+}
+ if(flag){
+    document.getElementById('p1').innerHTML="prime!";
+ }else{
+    document.getElementById('p1').innerHTML="not prime!";
+ }
+
+}
+*/
+
+
+/* ques: Mr John wants to create a program that equally distributes the
+total balls to the team members. The progräm must ensure that
+total balls must be greater than or equal to team members,
+I.e. Total balls available are 20 and team members are 3 then
+the output mustbe:
+Each member will get 6 balls and the remaining balls are 2.
+Help to Mr John to complete the program.*/
+
+function fnclick(){
+
+let a = document.getElementById('n1').value; // no. of balls
+let b = document.getElementById('n2').value; //no.of team members
+
+if(a<=b){
+   
+    var jkhk = parseInt(a/b);
+    var rem = a%b;
+    document.getElementById('p1').innerHTML= "Each member will get " + jkhk + " balls and the remaining balls are " + rem;    
+}
+else{
+     document.getElementById('p1').innerHTML="not possible as balls are less";
+
+}
+
+}
+</script>
 
 
 
 </head>
 <body>
+N1<input type="text" name="n1" id="n1" > <br>
+N2<input type="text" name="n2" id="n2"><br><br>
+
+<button onclick="fnclick()">Click Me</button><br>
+<p1 id="p1"></p1>
 
 
 
-    
-    
+
 </body>
 </html>

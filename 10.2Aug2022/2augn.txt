@@ -1,0 +1,16 @@
+Functions:
+lines of commnads that are called when needed
+
+
+in here, script tag is defined inside head but still the functions work. 
+this is because the body one will be loaded first and the function will be called only after the button line is loaded
+so there is no problem in this and it will work fine.
+
+
+
+
+Number will only convert var into number when the value inside the var is actually number
+
+
+<span> : inline element that lets us do styling at a particular part.
+isNan : an inbulit function to check whetre the given number is isNan
