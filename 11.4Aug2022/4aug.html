@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+        /* background: linear-gradient(to bottom,rgba(131, 200, 221, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526)); */
+        background: linear-gradient(to bottom,rgba(0, 0, 255, 0.288),rgba(147, 52, 219, 0.211),rgba(76, 0, 130, 0.397),rgba(0, 128, 0, 0.237),rgba(255, 255, 0, 0.251),rgba(255, 166, 0, 0.379),rgba(255, 0, 0, 0.247));background-repeat:no-repeat;background-size: cover ;height: 1000vh;
+       
+    
+    }
+    
+    </style>
+
+
+<script>
+
+
+
+
+function fnclick(){
+let a = document.getElementById('num').value;
+a=Number(a);
+var sum=0;
+while(a>0){
+var rem = a%10;
+sum +=rem;
+a=Math.floor(a/10);
+
+}
+console.log(sum);
+var BRadius = Math.floor(sum/5);
+
+
+document.getElementById('p').style.height= sum + "px";
+document.getElementById('p').style.width= sum +"px";
+document.getElementById('p').style.background = "radial-gradient(rgba(131, 221, 188, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526))";
+document.getElementById('p').style.transition="all 4s";
+document.getElementById('p').style.borderRadius="50%";
+
+
+
+}
+
+
+
+
+/*
+
+QUES3: 
+
+function fnclick(){
+let a = document.getElementById('l').value;
+let b = document.getElementById('r').value;
+let c = document.getElementById('k').value;
+var ans = "<br>Numbers divisible by k are: <br>";
+  a=Number(a);
+  b=Number(b);
+c=Number(c);
+
+for(var i=a;i<=b;i++){
+    if(i%c==0){
+        ans +=i +"<br>"
+    }
+}
+
+document.getElementById('p').innerHTML=ans;
+}
+*/
+
+
+/*
+QUES2: even numbers between 1 to n
+function fnclick(){
+let a =document.getElementById('num').value;
+ a=Number(a);
+ var evenNums = "<br>even numbers are:<br>";
+
+ for(var i=2;i<=a;i++){
+    if(i%2==0){
+        evenNums +=i +"<br>";
+    }
+ }
+document.getElementById('p').innerHTML = evenNums;
+} 
+*/
+
+
+
+</script>
+</head>
+<body>
+    
+
+
+Enter a number:
+<br>
+
+
+
+<!-- q 1 and q2
+<input type="number" name="n1" id="num">
+<br><br> -->
+
+<!-- ques 3
+<input type="number" name="n1" id="l"><br><br>
+<input type="number" name="n1" id="r"><br><br>
+<input type="number" name="n1" id="k"><br><br> -->
+
+
+<input type="number" name="n1" id="num"><br><br>
+
+
+
+<button onclick="fnclick()">Generate</button><br>
+<br>
+<div id="p" align="center"></div>
+
+<!-- All ques
+q1 square wala
+q2 all even numbers from 1 to n
+q3 : three text boxes l r and k numbers b/w l and r divided by k 
+q4: mon to sun switch case
+q5: div should have a sq on button click it becomes circle but gradually not ekdum
+ -->
+
+
+
+</body>
+</html>
