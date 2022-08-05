@@ -14,3 +14,9 @@ Number will only convert var into number when the value inside the var is actual
 
 <span> : inline element that lets us do styling at a particular part.
 isNan : an inbulit function to check whetre the given number is isNan
+
+
+
+
+4 types of appraches:
+procedural functional imperative and 

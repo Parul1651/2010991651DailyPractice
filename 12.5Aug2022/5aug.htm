@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo" ondblclick="myFunction(3,4)" style="background-color:yellow;">
+    Hello user</p>
+<p id="demo1"></p>
+
+    <script>
+        function myFunction(p1,p2){
+            var a = p1*p2;
+            document.getElementById('demo').innerText=a;
+            
+        }
+        
+    </script> -->
+
+
+
+
+<!-- callback() -->
+
+<pre id="oddNo"></pre>
+<script>
+
+function isOdd(num){
+    return num%2 !=0;  // returns a boolean value
+}
+
+
+function filter(numbers,fn){ //fn is a function we will pass as an argument here therfore, that is a callback fn
+
+let result=[];
+
+for(const i of numbers){ //here i is an iterator for numbers
+    if(fn(i)){
+        result.push(i);    }
+
+}
+return result;
+
+
+}
+
+let numbers=[1,2,3,4,5,6,7];
+let ans = filter(numbers,isOdd);
+document.getElementById('oddNo').innerHTML=ans;
+
+
+
+</script>
+</body>
+</html
