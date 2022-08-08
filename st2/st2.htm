@@ -10,10 +10,41 @@
     <style>
         body{
         /* background: linear-gradient(to bottom,rgba(131, 200, 221, 0.708), rgba(102, 166, 206, 0.795), rgba(105, 105, 235, 0.526)); */
-        background: linear-gradient(to bottom,rgba(0, 0, 255, 0.288),rgba(147, 52, 219, 0.211),rgba(76, 0, 130, 0.397),rgba(0, 128, 0, 0.237),rgba(255, 255, 0, 0.251),rgba(255, 166, 0, 0.379),rgba(255, 0, 0, 0.247));background-repeat:no-repeat;background-size: cover ;height: 100vh;
+        background: linear-gradient(to bottom,rgba(0, 0, 255, 0.288),rgba(147, 52, 219, 0.211),rgba(76, 0, 130, 0.271),rgba(0, 128, 0, 0.237),rgba(255, 255, 0, 0.251),rgba(255, 166, 0, 0.379),rgba(255, 0, 0, 0.247));background-repeat:no-repeat;background-size: cover ;height: 100vh;
        
     
     }
+        h2{
+          text-align: center;
+          font-family:fantasy;
+          color: rgba(91, 11, 175, 0.881);
+    }
+
+       input{
+          height: 30px;
+          width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+
+    }
+
+
+        #b1{
+          height: 35px;
+          margin-left: auto;
+          width: 100px;
+    }
+        #b2{
+        height: 35px;
+         margin-left: auto;
+         width: 100px;
+
+    }
+    button{           
+            background-color: rgb(232, 128, 36);
+            /* width: 40%;
+            margin-left: 30%; */
+        }
     
     #one{
         text-align: center;
@@ -24,7 +55,8 @@
     #p{
 
         margin-top: 30px;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     </style>
@@ -85,7 +117,7 @@ function fnclick1(){
 document.getElementById('p').style.height= "initial";
 document.getElementById('p').style.width= "initial";
 document.getElementById('p').style.background = "initial";
-document.getElementById('p').style.transition="all 2s";
+// document.getElementById('p').style.transition="all 4s";
 document.getElementById('p').style.borderRadius= "initial";
 // document.getElementById('p').reset();
 
@@ -101,7 +133,8 @@ document.getElementById('p').style.borderRadius= "initial";
 
     
 <div id="one">
-    Enter a number to create a square shape:
+    <h2>
+    Enter a number to create a square shape:</h2>
     <br>
 
     
@@ -110,10 +143,10 @@ document.getElementById('p').style.borderRadius= "initial";
 
 
 
-<button onclick="fnclick()">Generate</button>
+<button onclick="fnclick()" id="b1">Generate</button>
 
 
-<button onclick="fnclick1()">Reset</button><br></div>
+<button onclick="fnclick1()" id ='b2'>Reset</button><br></div>
 <div id="p"></div>
 
 
