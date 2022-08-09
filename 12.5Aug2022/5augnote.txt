@@ -11,3 +11,7 @@ callback():
 it is function passesd into another function as an argument,then it is passed inside another
 function for the required task.
 ek dusre function ke runtime par pass kar rahe hai call back function
+
+
+
+
