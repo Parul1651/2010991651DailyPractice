@@ -1,0 +1,15 @@
+
+Validation in JS:
+
+
+
+return check(formvalidate) : agar validate ne false return kia toh agle page par nahi ja sakta 
+if returns true , goes on next page
+
+\d : must be a number \d{5}: must be a number of 5 digits  
+Syntax: /^\d{no.of digits}4/
+D: must not be a number
+
+
+/^[a-zA-Z]+$/    for aplha validate
++ in this means atleast ek hona chahiye

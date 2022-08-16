@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form validation using RegExp</h1>
+
+   <!--<script>
+        function check(myform){
+
+            if(myform.myname.value=="" || myform.myname.value == null ){
+                alert("Name is mandatory");
+                return false;
+            }
+            
+            if(myform.myphone.value =="" || myform.myphone.value==null){
+                alert("Phone is mandatory")
+                return false;
+            }           
+            
+            else{
+                return true;
+            }
+        }
+    </script>
+
+<form name="formvalidate" action="formprocess.html" method="get" onsubmit="return check(formvalidate)">
+
+    <p> NAME:<br>
+        <input type="text" size="50" name="myname" /> 
+    </p>
+
+    <p>Phone NO.<br>
+        <input type="number" size="10" name="myphone" />
+
+    </p>
+
+<p> <input type="submit" value="Submit" />
+<input type="reset" value="Clear" />
+</p>
+-->
+
+
+
+
+
+<!-- <script>
+
+    function check_zip(zipCode){
+        var regex= /^\d{5}$/;
+        if(regex.test(zipCode.value)==false){
+            alert('the lt of zipcode must be atleast 5 digits');
+            zipCode.focus();
+            return false;
+        }
+
+        if(zipCode.value=" "){
+            alert("Enter zipCode");
+            zipCode.focus();
+            return false;
+        }
+        return true;
+
+
+
+
+
+    }
+</script>
+
+    
+
+<form name="zipvalidate" action="/error">
+    <p>zipCode: <br>
+    <input type="text" size="5" name="yourzip" /> <br>
+
+    <input type="button" value="Validate ZipCode" onClick="if(check_zip(zipvalidate.yourzip)) {
+        alert('Its validate zipcode')
+    } " />
+<input type="reset" />
+    </p>
+    </form>
+    -->
+
+
+
+
+    <!-- <script>
+
+        function check_aplha(letters){
+            var regex = /^[a-zA-Z] +$/;
+            if(regex.test(letters.yourname.value)== false){
+                alert("name must be aplabet only");
+                letters.yourname.focus();
+                return false;
+            }
+            if(letters.yourname.value=" "){
+                alert("name field is required");
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+
+<form name="alphavalidate" action="welcome.html" method="post" onSubmit="return check_alpha(this)">
+NAME:
+<input type="text" size="40" name="yourname" />
+<input type="submit" value="Submit" />
+<input type="reset" />
+
+</form> -->
+
+<script>
+    function getdata(){
+
+        var name= document.getElementById("myname").value;
+        var phone = document.getElementById("myphone").value;
+
+        localStorage.setItem("txt",name);
+        localStorage.setItem("txt1",phone);
+    }
+</script>
+
+<form action="display.htm" method="get">
+
+    <p> NAME:<br>
+        <input type="text" size="50" name="myname" /> 
+    </p>
+
+    <p>Phone NO.<br>
+        <input type="number" size="10" name="myphone" />
+
+    </p>
+
+<p> <input type="submit" value="Submit" onClick='getdata()'/>
+<input type="reset" value="Clear" />
+</p>
+
+
+</form>
+
+
+
+<!-- <script>
+
+function getData(){
+            var name = document.getElementById("myname").value;
+            var phone = document.getElementById("myphone").value;
+
+            localStorage.setItem("txtValue",name);
+            localStorage.setItem("txtValue1",phone);
+
+        }
+</script>
+
+
+
+<form name="formvalidate" action="display.htm" method="get">
+    <p>Name:
+        <input type="text" size="50" name="myname" id="myname"/>
+    </p>
+    <p>
+        Phone no.
+        <input type="text" size="50" name="myphone" id="myphone"/></p>
+    <p> 
+        <input type="submit" value="Submit" onclick="getData()">
+        <input type="reset" value="clear"/>
+    </p>
+</form> -->
+
+</body>
+</html>
