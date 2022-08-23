@@ -1,0 +1,11 @@
+Error handling in javascript:
+syntax Error
+runtime Error
+Error : 2 types one that can be handled and other that cant be handled like hardisk bhar gya etc RAM is full
+
+
+
+3 ways to error handled
+try:  jahan error aane ka chance hai
+catch: jahan error aae toh use fenkna hai
+finally:

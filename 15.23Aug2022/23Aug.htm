@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    <p id="p1"></p>
+    <p id="err"></p>
+    <script>
+let a =0;
+a+=1;
+        try{
+            alertt("helloooooo");
+        }
+        catch(err){
+            document.getElementById("err").innerHTML=err.message;
+        }
+        a+=1;
+        document.getElementById("p1").innerHTML=a;
+
+    </script> -->
+
+
+<input type="text" id="n1" /><br>
+    <button onclick="myFn()">Click Me</button>
+    <p id="err"></p>
+    <p id="demo"></p>
+    <script>
+        function myFn(){
+            function numberCal(){
+            let a= document.getElementById("n1").value;
+            if(!isNaN(a)){
+                a = Number(a);
+                if(a<18){
+                    throw "its too low";
+                }
+                if(a>60){
+                    throw "its too high";
+                }
+            }else{
+                throw "its not a number";
+            }
+
+        }
+
+        try{
+            numberCal();
+        }catch(abc){
+            document.getElementById('err').innerHTML=abc;   //abc is a var that catches whatever is thrown basically a mangta
+                                                            //yahan abc.message ka requirment nahi hai coz msg already humne throw mein user define kar dia hai
+        }
+    }
+    
+    </script>
+    
+</body>
+</html>
